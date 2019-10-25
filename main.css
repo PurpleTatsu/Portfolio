@@ -1,0 +1,42 @@
+body{
+  background: pink;
+}
+header{
+  background: white;
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  top: 0px;
+  margin: 0;
+  justify-content: space-around;
+}
+#map{
+  width: 100%;
+  height: auto;
+}
+
+.world{
+  width:50%;
+}
+ul{
+  display: flex;
+  list-style-type: none;
+  font-size: 3em;
+  justify-content: space-around;
+flex-wrap: wrap;
+}
+li{
+  background: white;
+  padding:19px;
+}
+#hero{
+  margin-top: 220px;
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1568148800053-1e3b87e6c7b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80);
+  background-size: cover;
+  background-position: 100%;
+  font-size: 5em;
+
+}
