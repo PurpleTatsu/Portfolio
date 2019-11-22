@@ -1,9 +1,9 @@
 body{
   /* background-image: linear-gradient(to left top, #292814, #31301a, #3a3921, #434228, #4c4b2f, #4f462d, #50412d, #503d2e, #412d2a, #2d2023, #191418, #010101); */
-    /* background-image: 
-    linear-gradient(to left top, #09253b, #0f2a40, #162f44, #1b3549, #213a4e, #20384c, #20374a, #1f3548, #192d3e, #122534, #0c1d2b, #051522, transparent),
-    url(https://images.unsplash.com/photo-1568148800053-1e3b87e6c7b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80) no-repeat center;
-  background-size: cover; */
+    background-image: 
+    /* linear-gradient(to left top, #09253b, #0f2a40, #162f44, #1b3549, #213a4e, #20384c, #20374a, #1f3548, #192d3e, #122534, #0c1d2b, #051522, transparent); */
+  url(https://images.unsplash.com/photo-1568148800053-1e3b87e6c7b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80);
+  background-size: cover;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   /* display: flex;
   flex-wrap: wrap;
@@ -86,12 +86,13 @@ li{
   margin-top: 90px;
   left: 0;
   height: 100vh;
-  width: 100%;
+  width: auto;
   /* background-image: url(https://images.unsplash.com/photo-1568148800053-1e3b87e6c7b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80); */
   background-size: cover;
   background-position: 100%;
   font-size: 5em;
 position: relative;
+border: 40px solid black;
 }
 
 #greeting{
@@ -112,14 +113,20 @@ margin: 15px;
 
 #skills{
   height: 98vh;
-  width: 100%;
+  width: auto;
   border: 40px solid black;
   display: flex;
+  padding: 20px;
   }
 #adobecc{
   height: 50%;
   width: auto;
   margin: auto;
+  /* clip-path: circle(16.1% at 50% 25%);
+  clip-path: circle(15.9% at 83% 44%);
+  clip-path: circle(15.9% at 50% 76%);
+  clip-path: circle(16.5% at 17% 44%); */
+
 }
 
 #skills-coding{
@@ -135,10 +142,14 @@ margin: auto;
 
 #projects{
   height: 98vh;
-  width: 100%;
+  width: auto;
   border: 40px solid black;
   }
-
+#about-me{
+  height: 98vh;
+  width: auto;
+  border: 40px solid black;
+}
   footer{
     background: gray;
     height: 100px;
