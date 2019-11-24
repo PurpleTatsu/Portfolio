@@ -4,9 +4,9 @@
 
 
 
-document.querySelector("#hawaii").addEventListener("click", function () {
-  console.log("hawaii")
-});
+// document.querySelector("#hawaii").addEventListener("click", function () {
+//   console.log("hawaii")
+// });
 
 // document.querySelector("#garuda-shield").addEventListener("click", function () {
 //   console.log("garuda-shield")
@@ -17,6 +17,6 @@ document.querySelector("#hawaii").addEventListener("click", function () {
 // document.querySelector("#lava").addEventListener("click", function () {
 //   console.log("lava")
 // });
-// document.querySelector("#singapore").addEventListener("click", function () {
-//   console.log("singapore")
-// }); 
+document.querySelector("#singapore").addEventListener("click", function () {
+  console.log("singapore")
+}); 

@@ -1,18 +1,44 @@
 body{
-  /* background-image: linear-gradient(to left top, #292814, #31301a, #3a3921, #434228, #4c4b2f, #4f462d, #50412d, #503d2e, #412d2a, #2d2023, #191418, #010101); */
-    background-image: 
-    linear-gradient(to left top, #09253b, #0f2a40, #162f44, #1b3549, #213a4e, #20384c, #20374a, #1f3548, #192d3e, #122534, #0c1d2b, #051522);
-  /* url(https://images.unsplash.com/photo-1568148800053-1e3b87e6c7b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80);
-  background-size: cover; */
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  /* display: flex;
-  flex-wrap: wrap;
-  flex-direction: column; */
+  background:
+  linear-gradient(rgb(9,37,59, 0.52), rgb(15,42,64, 0.52), rgb(22,47,68, 0.52), rgb(27,53,73, 0.52), rgb(33,58,78, 0.52), rgb(32,56,76, 0.52), rgb(32,55,74, 0.52), rgb(31,53,72, 0.52), rgb(25,45,62, 0.52), rgb(18,37,52, 0.52), rgb(12,29,43, 0.52), rgb(5,21,34, 0.52)),
+  url('file:///Users/Tatsu/Documents/CodingStuff/katie-portfolio/rizky-subagja-ZfVEWZTHs8M-unsplash.jpg');  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 }
+
+/* Photo by Rizky Subagja on Unsplash */
+
+/* greetings start*/
+#spin {
+  color:white;
+  font-size: 1em;
+  /* border: 1px solid white; */
+  text-align: center;
+  margin-left: 100px;
+}
+#spin:after {
+  content:"Hi! ";
+  animation-name: spin;
+  animation-duration: 10s; 
+  animation-timing-function: ease-in-out; 
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+
+}
+@keyframes spin {
+  25% { content:"你好! "; }
+  50% { content:"こんにちは! "; }
+  75% { content:"안녕하세요! "; }
+  100% { content:"Aloha! "; }
+}
+/* greetings end*/
+
 
 
 header{
-  /* background: #284155; */
   position: absolute;
   width: 100%;
   height: 80px;
@@ -88,7 +114,6 @@ li{
   /* background-image: url(https://images.unsplash.com/photo-1568148800053-1e3b87e6c7b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80); */
   background-size: cover;
   background-position: 100%;
-  font-size: 5em;
 position: relative;
 border: 40px solid black;
 display: flex;
@@ -97,7 +122,25 @@ display: flex;
 #greeting{
   margin-top: 450px;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
+#animation{
+ 
+  font-size: 3em;
+  width: 400px;
+}
+#intro{
+  width: 50%;
+  font-size: 3em;
+}
+
+#intro, #animation {
+  margin-top: 60px;
+}
+
+
 #greeting h1, h2{
   font-size: 1em;
 }
@@ -115,32 +158,42 @@ margin: 15px;
   width: auto;
   border: 40px solid black;
   display: flex;
+  flex-wrap: wrap;
   padding: 20px;
   }
 #adobecc{
-  height: 50%;
-  width: auto;
-  margin: auto;
-  /* clip-path: circle(16.1% at 50% 25%);
-  clip-path: circle(15.9% at 83% 44%);
-  clip-path: circle(15.9% at 50% 76%);
-  clip-path: circle(16.5% at 17% 44%); */
+  height: auto;
+  width: 30%;
+  margin: 10% auto 45% auto
+}
 
+.break {
+  flex-basis: 100%;
+  height: 0;
 }
 
 #skills-coding{
-  /* margin-top: 10%; */
-margin: auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
 }
-
-#skills-coding img{
+#skills-coding div{
   width: 10%;
   height: auto;
-  margin: 0px;
   transition: transform 0.3s linear;
+  text-align: center;
+  margin: 15px;
+}
+
+
+#skills-coding img{
+  width: 100%;
+  height: auto;
+  margin: 0px;
 
 }
-#skills-coding img:hover{
+#skills-coding div:hover{
   box-shadow: 0 2px 15px -4px black;
   transform: translateY(4px);
 }
@@ -160,8 +213,15 @@ margin: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-
 }
+
+#singapore{
+  display: none;
+  clip-path: circle(5.5% at 76% 71%);
+  border: 2px solid red;
+}
+
+
   footer{
     background: gray;
     height: 100px;
