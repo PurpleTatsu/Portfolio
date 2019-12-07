@@ -35,11 +35,20 @@ body{
 
 }
 @keyframes spin {
-  25% { content:"你好! "; }
-  50% { content:"こんにちは! "; }
-  75% { content:"안녕하세요! "; }
-  100% { content:"Aloha! "; }
+  25% { 
+    content:"你好! "; 
+  }
+  50% { 
+    content: "こんにちは! ";
+   }
+  75% { 
+    content: "안녕하세요! "; 
+  }
+  100% { 
+    content: "Aloha! "; 
+  }
 }
+
 /* greetings end*/
 
 
