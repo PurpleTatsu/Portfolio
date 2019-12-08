@@ -17,6 +17,8 @@
 // document.querySelector("#lava").addEventListener("click", function () {
 //   console.log("lava")
 // });
-document.querySelector("#singapore").addEventListener("click", function () {
-  console.log("singapore")
+document.querySelector("#video-games").addEventListener("click", function () {
+  console.log("Top 5: Legend of Zelda: Ocarina of Time, Tales of Symphonia, Final Fantasy X, The Sims 2, Persona 4")
 }); 
+
+
