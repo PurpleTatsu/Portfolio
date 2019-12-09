@@ -1,26 +1,8 @@
 body{
   font-family: 'Lato', sans-serif;
-
-  /* background:
-  linear-gradient(rgb(9,37,59, 0.52), rgb(15,42,64, 0.52), rgb(22,47,68, 0.52), rgb(27,53,73, 0.52), rgb(33,58,78, 0.52), rgb(32,56,76, 0.52), rgb(32,55,74, 0.52), rgb(31,53,72, 0.52), rgb(25,45,62, 0.52), rgb(18,37,52, 0.52), rgb(12,29,43, 0.52), rgb(5,21,34, 0.52)),
-  url('file:///Users/Tatsu/Documents/CodingStuff/katie-portfolio/rizky-subagja-ZfVEWZTHs8M-unsplash.jpg');  
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%; */
   background: #bfbfbf;
 }
 
-/* Photo by Rizky Subagja on Unsplash */
-
-/* greetings start*/
-
-/* #spin {
-  color:white;
-  font-size: 1em;
-  text-align: center;
-  margin-left: 100px;
-} */
 
 #spin:after {
   color:white;
@@ -30,12 +12,10 @@ body{
   animation-name: spin;
   animation-duration: 10s; 
   animation-timing-function: ease-in-out; 
-  animation-delay: 1s;
+  animation-delay: 2s;
   animation-iteration-count: 1;
   margin-bottom: 20px;
   height: 100px;
-
-
 }
 
 @keyframes spin {
@@ -72,13 +52,6 @@ header{
   margin: 0;
   justify-content: space-around;
 }
-/* #header {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 10vw;
-  /* set height to pixels if you want angle to change with screen width } */
-
 
 header a{
   margin-top: auto;
@@ -117,11 +90,6 @@ section{
   clip-path: circle(6.6% at 3% 63%);
 
 }
-/* .hawaii{
-  clip-path: circle(6.6% at 3% 63%);
-  z-index: 1;
-} */
-
 
 .places{
   position: absolute;
@@ -152,7 +120,7 @@ li{
   height: 100vh;
   width: 102%;
   /* background-image: url(https://images.unsplash.com/photo-1568148800053-1e3b87e6c7b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80); */
-  background-image: url(file:///Users/Tatsu/Documents/CodingStuff/katie-portfolio/rizky-subagja-ZfVEWZTHs8M-unsplash.jpg);
+  background-image: url(https://github.com/PurpleTatsu/Portfolio/blob/alternate-design/rizky-subagja-ZfVEWZTHs8M-unsplash.jpg?raw=true);
   background-size: cover;
   background-position: 100%;
   position: relative;
@@ -296,7 +264,20 @@ margin: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
+  footer p{
+    flex-basis: 100%;
+    margin: 0 auto;
+    font-size: 0.5em;
+  }
+  /* footer:first-child{
+    text-align: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
 
   footer img{
     width: 50px;
