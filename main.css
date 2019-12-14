@@ -1,10 +1,213 @@
 body{
   font-family: 'Lato', sans-serif;
-  background: #bfbfbf;
+  /* background: #bfbfbf; */
+  background: #C19871;
 }
 
+#hero{
+  margin-left: -10px;
+  margin-right: 0;
+  height: 100vh;
+  width: 102%;
+  margin-bottom: 20px;
+}
 
-#spin:after {
+.animation-box {
+  /* width: 100%; */
+  height: 100vh;
+  background-image: url(https://github.com/PurpleTatsu/Portfolio/blob/alternate-design/rizky-subagja-ZfVEWZTHs8M-unsplash.jpg?raw=true);
+  background-size: cover;
+  background-position: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.animation-container {
+  width: 1000rem;
+  height: 30rem;
+}
+
+@keyframes topFadeOut {
+  0% {
+    position: absolute;
+    top: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    top: 25%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bottomFadeOut {
+  0% {
+    position: absolute;
+    bottom: -5rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    bottom: 25%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+  
+}
+
+@keyframes topFadeOutVertical {
+  0% {
+    position: absolute;
+    top: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    top: 45%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rightFadeInOut {
+  0% {
+    position: absolute;
+    right: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    right: 10rem;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    right: 10rem;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+.first-text {
+  font-size: 4.4rem;
+  position: absolute;
+  left: 2.5rem;
+  top: 5rem;
+  opacity: 0;
+  animation-name: topFadeOut;
+  animation-duration: 5s;
+  animation-delay: 3s;
+  color: white;
+}
+
+.second-text {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 8.5rem;
+  opacity: 0;
+  animation-name: rightFadeInOut;
+  animation-delay: 3s;
+  animation-duration: 6s;
+  color: #ccc;
+}
+
+.third-text {
+  transform: rotate(-90deg);
+  font-size: 2rem;
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  opacity: 0;
+  animation-name: topFadeOutVertical;
+  animation-delay: 7.5s;
+  animation-duration: 6s;
+  color: #A3DDF0;
+  white-space: nowrap;
+}
+
+.fourth-text {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 10.5rem;
+  left: 10%;
+  opacity: 0;
+  color: #F0A3BE;
+  animation-name: fadeInOut;
+  animation-delay: 8.5s;
+  animation-duration: 7s;
+}
+
+.fifth-text {
+  font-size: 5rem;
+  position: absolute;
+  left: 5%;
+  bottom: 25%;
+  opacity: 0;
+  color: #F0EBA3;
+  animation-name: bottomFadeOut;
+  animation-delay: 10s;
+  animation-duration: 7s;
+}
+
+.stationary-text{
+  font-size: 2.5rem;
+  text-align: center;
+  opacity: 0;
+  color: white;
+  animation-name: nameFadeOut;
+  animation-delay: 13s;
+  animation-duration: 9s;
+  animation-fill-mode: forwards;  
+  margin: 20%;
+}
+
+@keyframes nameFadeOut {
+  0% {
+    opacity: 0;
+  }
+
+  75% {
+
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.stationary-text h1, .stationary-text h2{
+  margin: 0;
+}
+
+/* #spin:after {
   color:white;
   font-size: 0.8em;
   text-align: center;
@@ -31,12 +234,23 @@ body{
   100% { 
     content: "Aloha!"; 
   }
-}
+} */
 
 
 /* greetings end*/
 
-
+.about{
+  width: 70%;
+  margin: 0 auto;
+  height: 80vh;
+  /* border: 1px solid; */
+  border-radius: 25px;
+  position: relative;
+  background: #181617;
+  color: white;
+  padding: 10px 2px;
+}
+ 
 
 header{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -70,6 +284,7 @@ header a:hover{
 #projects-container{
 margin-top: 50px;
 }
+
 section{
   display: flex;
   flex-wrap: wrap;
@@ -83,18 +298,7 @@ section{
   border-radius: 50%;
   background:black;
 }
-#hawaii{
-  width: 100%;
-  height: auto;
-  position: absolute;
-  clip-path: circle(6.6% at 3% 63%);
 
-}
-
-.places{
-  position: absolute;
-  z-index: 3;
-}
 
 
 
@@ -112,22 +316,20 @@ li{
 
   padding:19px;
 }
-#hero{
+
+/* #hero{
   color: white;
   margin-left: -10px;
-  /* margin: -50px 0; */
   margin-right: 0;
   height: 100vh;
   width: 102%;
-  /* background-image: url(https://images.unsplash.com/photo-1568148800053-1e3b87e6c7b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80); */
   background-image: url(https://github.com/PurpleTatsu/Portfolio/blob/alternate-design/rizky-subagja-ZfVEWZTHs8M-unsplash.jpg?raw=true);
   background-size: cover;
   background-position: 100%;
   position: relative;
-  /* border: 40px solid black; */
   display: flex;
   flex-direction: column;
-  }
+  } */
 
 .scroll-down{
   margin: 0 auto;
@@ -154,7 +356,7 @@ li{
   width: 50%;
   font-size: 3em;
   margin-top: 20px;
-  margin-bottom: 20px;
+  
 }
 #intro h2{
   font-style: italic;
@@ -175,20 +377,13 @@ margin: 15px;
   }
 
 #skills{
-  /* height: 98vh;
-  width: auto;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px; */
-  height: 98vh;
     width: auto;
-    /* border: 40px solid black; */
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: column;
     padding: 20px;
     justify-content: center;
   }
+
 #adobecc{
   height: auto;
   width: 30%;
@@ -203,6 +398,7 @@ margin: 15px;
 #skills-coding{
   margin: auto;
   display: flex;
+  position: relative;
   flex-wrap: wrap;
   justify-content: center;
   font-size: 0.8em;
@@ -235,8 +431,13 @@ margin: 15px;
 #projects{
   height: 98vh;
   width: auto;
-  /* border: 40px solid black; */
-  }
+  text-align: center;
+  position: relative;
+}
+#projects h1{
+  margin-bottom: 0;
+  margin-top:50px;
+}
 #about-me{
   text-align: center;
   width: 70%;
@@ -386,12 +587,11 @@ margin: 15px;
   }
 }
 
- 
 /* testing hover text */
 
 .container{
   padding: 1em 0;
-  float: left;
+  /* float: left; */
   width: 50%;
 }
 @media screen and (max-width: 640px){
@@ -400,12 +600,12 @@ margin: 15px;
     width: 100%;
   }
 }
-
+/* 
 @media screen and (min-width: 900px){
   .container{
     width: 33.33333%;
   }
-}
+} */
 
 .container .title{
   color: #1a1a1a;
