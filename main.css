@@ -1,15 +1,18 @@
 body{
-  font-family: 'Lato', sans-serif;
+  /* font-family: 'Lato', sans-serif; */
   /* background: #bfbfbf; */
   background: #C19871;
+  /* background-image: linear-gradient(to right bottom, #181617, #413134, #6e4e4c, #9b7060, #c19871); */
+  font-family: 'Cabin', sans-serif;
+
 }
 
 #hero{
   margin-left: -10px;
+  margin-top: -10px;
   margin-right: 0;
   height: 100vh;
   width: 102%;
-  margin-bottom: 20px;
 }
 
 .animation-box {
@@ -26,6 +29,9 @@ body{
 .animation-container {
   width: 1000rem;
   height: 30rem;
+}
+.js-loading *{
+  animation-play-state: paused !important;
 }
 
 @keyframes topFadeOut {
@@ -124,7 +130,7 @@ body{
   opacity: 0;
   animation-name: topFadeOut;
   animation-duration: 5s;
-  animation-delay: 3s;
+  animation-delay: 1s;
   color: white;
 }
 
@@ -147,7 +153,7 @@ body{
   top: 45%;
   opacity: 0;
   animation-name: topFadeOutVertical;
-  animation-delay: 7.5s;
+  animation-delay: 6s;
   animation-duration: 6s;
   color: #A3DDF0;
   white-space: nowrap;
@@ -161,7 +167,7 @@ body{
   opacity: 0;
   color: #F0A3BE;
   animation-name: fadeInOut;
-  animation-delay: 8.5s;
+  animation-delay: 8s;
   animation-duration: 7s;
 }
 
@@ -240,7 +246,8 @@ body{
 /* greetings end*/
 
 .about{
-  width: 70%;
+  /* width: 70%; */
+  display: flex;
   margin: 0 auto;
   height: 80vh;
   /* border: 1px solid; */
@@ -253,9 +260,9 @@ body{
  
 
 header{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
-  background: #161616;
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+  font-size: 0.7em;
+  background: transparent;
   position: fixed;
   z-index: 3;
   width: 100%;
@@ -265,6 +272,11 @@ header{
   top: 0px;
   margin: 0;
   justify-content: space-around;
+  transition: 0.3s all;
+
+}
+.active {
+  background-color:  #161616;
 }
 
 header a{
@@ -314,20 +326,6 @@ li{
 
   padding:19px;
 }
-
-/* #hero{
-  color: white;
-  margin-left: -10px;
-  margin-right: 0;
-  height: 100vh;
-  width: 102%;
-  background-image: url(https://github.com/PurpleTatsu/Portfolio/blob/alternate-design/rizky-subagja-ZfVEWZTHs8M-unsplash.jpg?raw=true);
-  background-size: cover;
-  background-position: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  } */
 
 .scroll-down{
   margin: 0 auto;
@@ -449,32 +447,26 @@ margin: 15px;
 }
 
 
-
   footer{
     margin-top: 150px;
     height: 100px;
     width: 100%;
-    left: 0;
     text-align: center;
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-top: double
+    border-top: double;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
   }
   footer p{
     flex-basis: 100%;
     margin: 0 auto;
     font-size: 0.5em;
   }
-  /* footer:first-child{
-    text-align: center;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
 
   footer img{
     width: 50px;
@@ -484,15 +476,10 @@ margin: 15px;
   }
 
   footer img:hover{
-    /* box-shadow: 7px 7px 5px darkslategray; */
     border-radius: 50%;
     background:white;
-  
   }
-  /* footer img:active{
-    box-shadow: 7px 7px 5px darkslategray;
-    transform: translateY(4px);
-  } */
+
 
   .section-title{
     text-align: center;
@@ -513,8 +500,8 @@ margin: 15px;
   width: auto;
 }
 
+/* 
 
-/* oval button */
 .next{
   align-self: center;
 }
@@ -581,7 +568,7 @@ margin: 15px;
     opacity: 1;
     transform: translateY(0px) scale(1);
   }
-}
+} */
 
 /* testing hover text */
 
@@ -745,3 +732,119 @@ height: auto;
     width: 33.33333%;
   }
 } */
+.map{
+  margin-top: 200px;
+}
+
+#world{
+  position: absolute;
+  width: 100%;
+  max-height: 100vh;
+}
+
+#lava{
+  position: absolute;
+  width: 100%;
+  max-height: 100vh;
+  clip-path: circle(4.0% at 3.4% 60%);
+}
+
+.kuwait{
+  position: absolute;
+  width: 100%;
+  max-height: 100vh;
+  clip-path: circle(2.7% at 60% 58%);
+}
+#singapore{
+  position: absolute;
+  width: 100%;
+  max-height: 100vh;
+  clip-path: circle(2.6% at 75.4% 69%);
+}
+
+#garuda-shield{
+  position: absolute;
+  width: 100%;
+  max-height: 100vh;
+  clip-path: circle(2.6% at 79% 72%);
+}
+#afghanistan{
+  position: absolute;
+  width: 100%;
+  max-height: 100vh;
+  clip-path: circle(5.1% at 64% 57%);
+}
+#lava:hover, .kuwait:hover, #singapore:hover, #garuda-shield:hover,#afghanistan:hover{
+
+  background:white;
+  z-index: 1;
+}
+/* 
+#afghanistan-story, #lava-story, .kuwait-story, #singapore-story, #garuda-shield-story,#afghanistan-story{
+  display:none;
+  height: auto;
+  width: 400px;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  text-align: center;
+  z-index: 9999;
+  position: absolute;
+  padding: 20px 0;
+}*/
+
+/* #afghanistan-story a, #lava-story a, .kuwait-story a, #singapore-story a, #garuda-shield-story a,#afghanistan-story a{
+  text-decoration: none;
+  color: white;
+}
+
+#afghanistan-story img, #lava-story img, .kuwait-story img, #singapore-story img, #garuda-shield-story img,#afghanistan-story img{
+  margin: 0 auto;
+  max-width: 300px;
+  height: auto;
+}  */
+
+
+
+/* #afghanistan:hover~#afghanistan-story, #lava:hover~#lava-story, .kuwait:hover~.kuwait-story, #singapore:hover~#singapore-story, #garuda-shield:hover~#garuda-shield-story{
+  display: block;
+} */
+
+.modal {
+  display: none;
+  position: fixed; 
+  padding-top: 50px;
+  left: 0; 
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+  position: relative; 
+  background-color: white;
+  padding: 20px; 
+  margin: auto; 
+  width: 75%;  
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+.close-btn {
+  float: right; 
+  color: lightgray; 
+  font-size: 24px;  
+  font-weight: bold;
+}
+.close-btn:hover {
+  color: darkgray;
+}
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
