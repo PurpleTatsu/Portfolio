@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
 
+  <script defer src="script.js"></script>
 
 
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -51,15 +52,19 @@
 
   <div class="about">
     <div id="about-me">
-      <p>I’m a software engineer with a background in graphic design and public relations through 13 years in the
+      <p> Aloha! I'm Katie, a software engineer with a background in graphic design and public relations through 13 years in the
         Army. I’m passionate about design, education, languages <span id="video-games">(and video games!)</span>, and
         am
         well-versed in adapting information for multiple audiences. I love to develop myself and others and thrive in
         environments where technology and
         education intersect to help people achieve their goals.</p>
     </div>
-    <div id="skills">
+<div id="portrait">
+  <img src="file:///Users/Tatsu/Downloads/katie-art.png"/>
+</div>
+    <!-- <div id="skills">
       <div id="skills-coding">
+        <p>Here are some technologies I've been using lately:</p>
         <div><img id="html" src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" />
           <p>HTML</p>
         </div>
@@ -75,9 +80,6 @@
         <div><img id="js" src="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" />
           <p>JAVASCRIPT</p>
         </div>
-        <!-- <div><img id="express" src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg" />
-            <p>EXPRESS</p>
-          </div> -->
         <div><img id="node" src="https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg" />
           <p>NODEJS</p>
         </div>
@@ -99,7 +101,8 @@
         <div><img id="indesign" src="https://cdn2.iconfinder.com/data/icons/adobe-cc-icons/512/cc_1id.png" />
           <p>INDESIGN</p>
         </div>
-      </div>
+      </div> -->
+
     </div>
   </div>
 
@@ -211,41 +214,27 @@
 
 
   <div class="map">
+    <h3>In a prior life I was an Army journalist</h3>
+    <img id="world" src="file:///Users/Tatsu/Downloads/world.svg" />
 
-      
-    
-    
-    
-    <!-- <img id="world" src="file:///Users/Tatsu/Downloads/world.svg" /> -->
-    
-    <!-- <img id="lava" src="file:///Users/Tatsu/Downloads/world.svg" />
-      <div id="lava-story">
+    <img class="lava" id="modal-btn" src="file:///Users/Tatsu/Downloads/world.svg" />
+    <div class="modal" class="modal-lava">
+      <div id="lava-story" class="modal-content">
+        <span class="close-btn">&times;</span>
         <img src="https://cdn.dvidshub.net/media/thumbs/photos/1411/1641956/600x375_q75.jpg" />
-        
+
         <a href="https://www.dvidshub.net/video/372246/hawaii-county-reconstructing-chain-craters-road">
           <h2>Puna Lava Flow</h2>
         </a>
-      </div> -->
-      
-      
-      
-      
-      <button id="modal-btn"> click me, I make a modal</button>
-  <div class="modal">
-  <div class="modal-content">
-    <span class="close-btn">&times;</span>
-    <img src="https://cdn.dvidshub.net/media/thumbs/photos/1001/238718/1000w_q95.jpg" />
-    <a href="https://www.dvidshub.net/image/238718/us-forces-conduct-sniper-training-with-kuwait-commandos">
-      <h2>U.S. Forces Conduct Sniper Training With Kuwait Commandos</h2>
-    </a>
-  </div>
-  </div>
-  
+      </div>
+    </div>
+
+
 
     <img class="kuwait" id="modal-btn" src="file:///Users/Tatsu/Downloads/world.svg" />
-    <div class="modal">
+    <div class="modal" class="modal-kuwait">
       <div id="kuwait-story" class="modal-content">
-          <span class="close-btn">&times;</span>
+        <span class="close-btn">&times;</span>
         <img src="https://cdn.dvidshub.net/media/thumbs/photos/1001/238718/1000w_q95.jpg" />
         <a href="https://www.dvidshub.net/image/238718/us-forces-conduct-sniper-training-with-kuwait-commandos">
           <h2>U.S. Forces Conduct Sniper Training With Kuwait Commandos</h2>
@@ -253,32 +242,41 @@
       </div>
     </div>
 
-    <!-- 
-    <img id="singapore" src="file:///Users/Tatsu/Downloads/world.svg" />
-    <div id="singapore-story">
-      <img src="https://cdn.dvidshub.net/media/thumbs/photos/1608/2761311/1000w_q95.jpg">
-      <a href="https://www.dvidshub.net/news/205746/36th-annual-bilateral-exercise-tiger-balm-16-comes-close">
-        <h2>36th annual bilateral exercise “Tiger Balm 16” comes to a close</h2>
-      </a>
+
+    <img class="singapore" id="modal-btn" src="file:///Users/Tatsu/Downloads/world.svg" />
+    <div class="modal" class="modal-singapore">
+      <div id="singapore-story" class="modal-content">
+        <span class="close-btn">&times;</span>
+        <img src="https://cdn.dvidshub.net/media/thumbs/photos/1608/2761311/1000w_q95.jpg">
+        <a href="https://www.dvidshub.net/news/205746/36th-annual-bilateral-exercise-tiger-balm-16-comes-close">
+          <h2>36th annual bilateral exercise “Tiger Balm 16” comes to a close</h2>
+        </a>
+      </div>
     </div>
 
-    <img id="garuda-shield" src="file:///Users/Tatsu/Downloads/world.svg" />
-    <div id="garuda-shield-story">
+    <img class="garuda-shield" id="modal-btn" src="file:///Users/Tatsu/Downloads/world.svg" />
+    <div class="modal" class="modal-indonesia">
+    <div id="garuda-shield-story" class="modal-content">
+      <span class="close-btn">&times;</span>
       <img src="https://cdn.dvidshub.net/media/thumbs/photos/1410/1597901/1000w_q95.jpg" />
       <a
         href="https://www.dvidshub.net/news/144310/one-spirit-hawaii-guardsmen-indonesia-armed-forces-participate-garuda-shield-2014">
         <h2>'One Spirit' - Hawaii Guardsmen, Indonesia armed forces participate in Garuda Shield 2014</h2>
       </a>
     </div>
+  </div>
 
-    <img id="afghanistan" src="file:///Users/Tatsu/Downloads/world.svg" />
-    <div id="afghanistan-story">
-      <img src="https://cdn.dvidshub.net/media/thumbs/photos/1210/677502/600x375_q75.jpg" />
-      <a
-        href="https://www.dvidshub.net/image/677502/afghan-border-police-knock-out-insurgent-activity-with-southern-fist">
-        <h2>Afghan Border Police knock out insurgent activity with Southern Fist</h2>
-      </a>
-    </div> -->
+  <img class="afghanistan" src="file:///Users/Tatsu/Downloads/world.svg" />
+  <div class="modal" class="∂">
+  <div id="afghanistan-story" class="modal-content">
+    <span class="close-btn">&times;</span>
+    <img src="https://cdn.dvidshub.net/media/thumbs/photos/1210/677502/600x375_q75.jpg" />
+    <a
+      href="https://www.dvidshub.net/image/677502/afghan-border-police-knock-out-insurgent-activity-with-southern-fist">
+      <h2>Afghan Border Police knock out insurgent activity with Southern Fist</h2>
+    </a>
+  </div>
+  </div>
 
 
   </div>
@@ -301,7 +299,6 @@
 
 
   </footer>
-  <script defer src="script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </body>
 
