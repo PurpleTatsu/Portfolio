@@ -54,9 +54,8 @@ document.querySelector(".kuwait").addEventListener("click", function () {
 
 document.querySelector(".afghanistan").addEventListener("click", function () {
   console.log("afghanistan")
-  let modal = document.querySelector(".modal-afghanistan")
-
   modal.style.display = "block"
+
 });
 
 
@@ -76,4 +75,14 @@ $(function () {
   });
 });
 
+$(function () {
+  $(window).on("scroll", function () {
+    if ($(window).scrollTop() > 60) {
+      $("header").addClass("active");
+    } else {
+      //remove the background property so it comes transparent again (defined in your css)
+      $("header").removeClass("active");
+    }
+  });
+});
 

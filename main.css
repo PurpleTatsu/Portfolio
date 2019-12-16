@@ -246,10 +246,10 @@ body{
 
 /* greetings end*/
 
-.about{
+#about{
   width: 80%;
   display: flex;
-  margin: 0 auto;
+  margin: 100px auto auto auto;
   height: 80vh;
   /* border: 1px solid; */
   border-radius: 25px;
@@ -274,6 +274,25 @@ header{
   margin: 0;
   justify-content: space-around;
   transition: 0.3s all;
+}
+header div{
+  display: flex;
+}
+header div a{
+  border: none;
+}
+header div a:hover{
+  border: none;
+}
+header img{
+  height: 30px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 29px;
+  padding: 0;
+}
+header img:hover{
+  background:gray;
 
 }
 .active {
@@ -399,9 +418,16 @@ margin: 15px;
   flex-wrap: wrap;
   justify-content: center;
   font-size: 0.8em;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
 }
+#skills-coding h2{
+  flex-grow: 1;
+    width: 100%;
+    text-align: center;
+    font-size: 1.7em;
+    margin-bottom: 1em;
+
+  }
 #skills-coding div{
   width: 8%;
   height: auto;
@@ -450,6 +476,7 @@ margin: 15px;
 }
 #portrait{
   width:50%;
+  align-self: center;
 }
 #portrait img{
   width: 100%;
@@ -466,7 +493,7 @@ margin: 15px;
     align-items: center;
     flex-direction: column;
     border-top: double;
-    position:fixed;
+    /* position:fixed; */
     bottom:0;
     left:0;
     right:0;
@@ -597,6 +624,8 @@ margin: 15px;
 .content-details p{
   color: #fff;
   font-size: 0.8em;
+  padding: 0 5px 0 5px;
+
 }
 
 .fadeIn-bottom{
@@ -617,7 +646,7 @@ margin: 15px;
 
 
 @media only screen and (max-width: 640px) {
-.about{
+#about{
   width: 70%;
   margin: 0 auto;
 height: auto;
@@ -643,7 +672,7 @@ height: auto;
 
 
 @media only screen and (max-width: 360px) {
-  .about{
+  #about{
     width: 70%;
     margin: 0 auto;
     height: auto;
@@ -683,40 +712,51 @@ height: auto;
 #world{
   position: absolute;
   width: 100%;
-  max-height: 100vh;
+  height: auto;
+  /* max-height: 100vh; */
 }
 
 .lava{
   position: absolute;
   width: 100%;
-  max-height: 100vh;
+    height: auto;
+
+  /* max-height: 100vh; */
   clip-path: circle(4.0% at 3.4% 60%);
 }
 
 .kuwait{
   position: absolute;
   width: 100%;
-  max-height: 100vh;
+    height: auto;
+
+  /* max-height: 100vh; */
   clip-path: circle(2.7% at 60% 58%);
   
 }
 .singapore{
   position: absolute;
   width: 100%;
-  max-height: 100vh;
+    height: auto;
+
+  /* max-height: 100vh; */
   clip-path: circle(2.6% at 75.4% 69%);
 }
 
 .garuda-shield{
   position: absolute;
   width: 100%;
-  max-height: 100vh;
+    height: auto;
+
+  /* max-height: 100vh; */
   clip-path: circle(2.6% at 79% 72%);
 }
 .afghanistan{
   position: absolute;
   width: 100%;
-  max-height: 100vh;
+    height: auto;
+
+  /* max-height: 100vh; */
   clip-path: circle(5.1% at 64% 57%);
 }
 .lava:hover, .kuwait:hover, .singapore:hover, .garuda-shield:hover, .afghanistan:hover{
